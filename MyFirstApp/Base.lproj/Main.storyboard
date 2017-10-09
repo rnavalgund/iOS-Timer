@@ -18,32 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimg" translatesAutoresizingMaskIntoConstraints="NO" id="CCC-T8-ofx">
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="568"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FYu-iB-zZR">
-                                <rect key="frame" x="137" y="63" width="46" height="110.5"/>
+                                <rect key="frame" x="95" y="170" width="130.5" height="177.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx6-pl-H0j">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-94-drP">
-                                        <rect key="frame" x="0.0" y="20.5" width="46" height="30"/>
-                                        <state key="normal" title="Start"/>
+                                        <rect key="frame" x="0.0" y="57.5" width="130.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qix-BM-dif"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCv-ak-IZD">
-                                        <rect key="frame" x="0.0" y="50.5" width="46" height="30"/>
-                                        <state key="normal" title="Pause"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="130.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qs5-cE-rKE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLw-i7-T52">
-                                        <rect key="frame" x="0.0" y="80.5" width="46" height="30"/>
-                                        <state key="normal" title="Reset"/>
+                                        <rect key="frame" x="0.0" y="137.5" width="130.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucf-N7-cqW"/>
                                         </connections>
@@ -51,10 +63,14 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="FYu-iB-zZR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="XGC-5d-VeU"/>
-                            <constraint firstItem="FYu-iB-zZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTP-Vd-Jld"/>
+                            <constraint firstItem="CCC-T8-ofx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="51r-92-TIf"/>
+                            <constraint firstItem="CCC-T8-ofx" firstAttribute="centerX" secondItem="FYu-iB-zZR" secondAttribute="centerX" constant="0.5" id="NLR-ly-KLa"/>
+                            <constraint firstItem="FYu-iB-zZR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="XGC-5d-VeU"/>
+                            <constraint firstItem="CCC-T8-ofx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e1t-DJ-x5s"/>
+                            <constraint firstItem="CCC-T8-ofx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hjn-vT-NNo"/>
+                            <constraint firstItem="FYu-iB-zZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.25" id="oTP-Vd-Jld"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,4 +85,7 @@
             <point key="canvasLocation" x="133.125" y="132.04225352112675"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgimg" width="1687" height="3000"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA06DCE1F8BB97600B49BA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA06DCD1F8BB97600B49BA4 /* Images.xcassets */; };
 		EEE6A4AE1F888E5700DD99C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE6A4AD1F888E5700DD99C6 /* AppDelegate.swift */; };
 		EEE6A4B01F888E5700DD99C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE6A4AF1F888E5700DD99C6 /* ViewController.swift */; };
 		EEE6A4B31F888E5700DD99C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE6A4B11F888E5700DD99C6 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEA06DCD1F8BB97600B49BA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EEE6A4AA1F888E5700DD99C6 /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE6A4AD1F888E5700DD99C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE6A4AF1F888E5700DD99C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				EEE6A4B41F888E5700DD99C6 /* Assets.xcassets */,
 				EEE6A4B61F888E5700DD99C6 /* LaunchScreen.storyboard */,
 				EEE6A4B91F888E5700DD99C6 /* Info.plist */,
+				EEA06DCD1F8BB97600B49BA4 /* Images.xcassets */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE6A4B81F888E5700DD99C6 /* LaunchScreen.storyboard in Resources */,
+				EEA06DCE1F8BB97600B49BA4 /* Images.xcassets in Resources */,
 				EEE6A4B51F888E5700DD99C6 /* Assets.xcassets in Resources */,
 				EEE6A4B31F888E5700DD99C6 /* Main.storyboard in Resources */,
 			);
@@ -426,8 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU8TYBP8RM;
+				"DEVELOPMENT_TEAM[sdk=*]" = HU8TYBP8RM;
 				INFOPLIST_FILE = MyFirstApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU8TYBP8RM;
 				INFOPLIST_FILE = MyFirstApp/Info.plist;
