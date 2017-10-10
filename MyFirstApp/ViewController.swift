@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         timer.invalidate()
         isPlaying = false
-        counter = 0.0
+        counter = 00.00
         timeLabel.text = String(counter)
     }
     
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     
     //creating variables to use through the app.
-    var counter = 0.0
+    var counter = 00.00
     var timer = Timer()
     var isPlaying = false
     
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 
     //Our timer function for the timer to click-clock every 0.1s (That is every 10ms once.)
     @objc func UpdateTime(){
-        counter = counter + 0.1
+        counter = counter + 0.10
         timeLabel.text = String(format: "%.1f" , counter)
     }
 }

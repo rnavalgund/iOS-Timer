@@ -18,17 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer made by RN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-dm-ogc">
-                                <rect key="frame" x="116.5" y="323" width="141.5" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimg" translatesAutoresizingMaskIntoConstraints="NO" id="wvr-ed-l1n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer made by RN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-dm-ogc">
+                                <rect key="frame" x="117" y="323" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wvr-ed-l1n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lby-Zc-BA8"/>
                             <constraint firstItem="uHo-dm-ogc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZI9-yY-y6z"/>
+                            <constraint firstItem="wvr-ed-l1n" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="d9K-mD-mM2"/>
                             <constraint firstItem="uHo-dm-ogc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ddP-0v-SyN"/>
+                            <constraint firstItem="wvr-ed-l1n" firstAttribute="centerX" secondItem="uHo-dm-ogc" secondAttribute="centerX" id="kpJ-4a-0gd"/>
+                            <constraint firstItem="wvr-ed-l1n" firstAttribute="centerY" secondItem="uHo-dm-ogc" secondAttribute="centerY" id="lHK-8H-AIM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +45,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgimg" width="2000" height="3000"/>
+    </resources>
 </document>
